@@ -1,0 +1,18 @@
+# Test configuration – enterprise scope against the mock API and the Contoso fixtures.
+# Used by: npm run testdata -- --scope enterprise
+# Only values that differ from the defaults are listed (see dashboard.config.yml for all options).
+scope: enterprise
+enterprise: contoso
+branding:
+  title: Contoso Copilot Maturity (test data)
+  subtitle: Enterprise scope · generated fixtures
+collect:
+  start_date: "2026-07-01"
+team_names:
+  data-eng: Data Engineering
+  ml-ops: ML Ops
+  qa-automation: QA Automation
+  devex: Developer Experience
+  api-gateway: API Gateway
+privacy:
+  pseudonymize: false

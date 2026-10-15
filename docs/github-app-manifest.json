@@ -1,0 +1,15 @@
+{
+  "_comment": "Reference settings for the read-only GitHub App used by the collector. Organization scope: create the App under the organization (Settings › Developer settings › GitHub Apps › New GitHub App) or POST this manifest to https://github.com/organizations/<ORG>/settings/apps/new. Enterprise scope: create an enterprise-owned App (Enterprise settings › GitHub Apps) with only 'Enterprise Copilot metrics: Read' – remove the organization_* permissions. Remove organization_administration if you set collect.billing: false. Verify with: npm run auth:check",
+  "name": "Copilot Maturity Dashboard",
+  "url": "https://github.com/",
+  "description": "Reads GitHub Copilot usage metrics for the Copilot Maturity Dashboard (read-only).",
+  "public": false,
+  "hook_attributes": {
+    "active": false
+  },
+  "default_permissions": {
+    "organization_copilot_metrics": "read",
+    "organization_administration": "read"
+  },
+  "default_events": []
+}

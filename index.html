@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Copilot Maturity Dashboard</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%231a7f37'/%3E%3Crect x='3' y='3' width='4' height='10' fill='%23fff'/%3E%3Crect x='9' y='3' width='4' height='5' fill='%23fff'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="app-header" role="banner">
+      <div class="app-header__brand">
+        <span id="brand-logo" class="app-header__logo" aria-hidden="true"></span>
+        <div>
+          <h1 id="brand-title" class="app-header__title">Copilot Maturity Dashboard</h1>
+          <p id="brand-subtitle" class="app-header__subtitle"></p>
+        </div>
+      </div>
+      <nav class="app-header__controls" aria-label="Dashboard controls">
+        <label class="control" id="target-control" hidden>
+          <span class="control__label" id="target-label">Organization</span>
+          <select id="target-select" class="form-select select-sm"></select>
+        </label>
+        <label class="control">
+          <span class="control__label">Month</span>
+          <select id="month-select" class="form-select select-sm"></select>
+        </label>
+        <label class="control">
+          <span class="control__label">Color by</span>
+          <select id="color-select" class="form-select select-sm"></select>
+        </label>
+        <div class="control weights">
+          <span class="control__label">Weights</span>
+          <button id="weights-button" class="btn btn-sm" type="button" aria-expanded="false" aria-controls="weights-popover">
+            <span id="weights-summary">Equal</span> <span class="dropdown-caret"></span>
+          </button>
+          <div id="weights-popover" class="weights__popover Box color-shadow-large" hidden></div>
+        </div>
+        <label class="control control--inline">
+          <input type="checkbox" id="unassigned-toggle" />
+          <span>Show unassigned</span>
+        </label>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <div id="banners"></div>
+
+      <section class="board" aria-label="Teams">
+        <div class="board__map Box">
+          <div class="Box-header board__header">
+            <h2 class="Box-title" id="map-title">Teams</h2>
+            <div class="legend" id="legend" aria-hidden="true"></div>
+          </div>
+          <div id="treemap" class="treemap" role="list"></div>
+        </div>
+        <aside id="pane" class="board__pane Box" aria-live="polite"></aside>
+      </section>
+
+      <section id="methodology" class="section" aria-labelledby="methodology-title"></section>
+
+      <section id="people" class="section" aria-labelledby="people-title"></section>
+    </main>
+
+    <footer class="app-footer">
+      <span id="footer-text"></span>
+      <span id="generated-at" class="color-fg-muted"></span>
+    </footer>
+  </body>
+</html>

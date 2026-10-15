@@ -1,0 +1,2613 @@
+{
+ "version": 1,
+ "seed": 42,
+ "start": "2026-07-01",
+ "end": "2026-09-30",
+ "months": [
+  "2026-07",
+  "2026-08",
+  "2026-09"
+ ],
+ "enterprise": {
+  "slug": "contoso",
+  "id": "41000"
+ },
+ "orgs": [
+  {
+   "slug": "contoso-apps",
+   "id": "51001"
+  },
+  {
+   "slug": "contoso-data",
+   "id": "51002"
+  }
+ ],
+ "users": [
+  {
+   "id": 7000100,
+   "login": "nina-larsen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000101,
+   "login": "nina-bakker",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000102,
+   "login": "kai-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000103,
+   "login": "dana-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000104,
+   "login": "grace-meyer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000105,
+   "login": "mo-ito",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000106,
+   "login": "sofia-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000107,
+   "login": "vik-ito",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000108,
+   "login": "raj-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000109,
+   "login": "quinn-khan",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000110,
+   "login": "farah-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000111,
+   "login": "jon-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000112,
+   "login": "lea-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000113,
+   "login": "tess-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000114,
+   "login": "maya-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000115,
+   "login": "elena-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000116,
+   "login": "dev-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000117,
+   "login": "pia-okafor",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000118,
+   "login": "maya-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000119,
+   "login": "vik-khan",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000120,
+   "login": "rosa-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000121,
+   "login": "lea-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000122,
+   "login": "anna-quist",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000123,
+   "login": "amir-bakker",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000124,
+   "login": "sofia-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000125,
+   "login": "sam-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000126,
+   "login": "uma-larsen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000127,
+   "login": "pia-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000128,
+   "login": "jade-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000129,
+   "login": "mo-bakker",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000130,
+   "login": "jon-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000131,
+   "login": "nina-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000132,
+   "login": "finn-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000133,
+   "login": "sofia-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000134,
+   "login": "zoe-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000135,
+   "login": "liam-quist",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000136,
+   "login": "ivan-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000137,
+   "login": "raj-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000138,
+   "login": "carla-ito",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000139,
+   "login": "emil-young",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000140,
+   "login": "jon-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000141,
+   "login": "jon-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000142,
+   "login": "vik-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000143,
+   "login": "anna-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000144,
+   "login": "farah-jansen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000145,
+   "login": "jade-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000146,
+   "login": "emil-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000147,
+   "login": "tess-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000148,
+   "login": "ben-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000149,
+   "login": "bo-bakker",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000150,
+   "login": "zoe-okafor",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000151,
+   "login": "nina-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000152,
+   "login": "maya-larsen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000153,
+   "login": "ivan-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000154,
+   "login": "grace-young",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000155,
+   "login": "alan-ueda",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000156,
+   "login": "zoe-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000157,
+   "login": "uma-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000158,
+   "login": "tariq-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000159,
+   "login": "omar-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000160,
+   "login": "grace-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000161,
+   "login": "dev-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000162,
+   "login": "pia-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000163,
+   "login": "kai-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000164,
+   "login": "tariq-meyer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000165,
+   "login": "amir-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000166,
+   "login": "sam-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000167,
+   "login": "quinn-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000168,
+   "login": "vik-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000169,
+   "login": "wen-young",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000170,
+   "login": "anna-bakker",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000171,
+   "login": "yusuf-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000172,
+   "login": "kai-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000173,
+   "login": "lea-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000174,
+   "login": "farah-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000175,
+   "login": "ivan-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000176,
+   "login": "wen-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000177,
+   "login": "dev-costa",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000178,
+   "login": "rosa-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000179,
+   "login": "sam-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000180,
+   "login": "carla-costa",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000181,
+   "login": "amir-costa",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000182,
+   "login": "jade-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000183,
+   "login": "sam-larsen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000184,
+   "login": "jade-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000185,
+   "login": "carla-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000186,
+   "login": "jon-berg",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000187,
+   "login": "wen-ueda",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000188,
+   "login": "dev-bakker",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000189,
+   "login": "chen-garcia",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000190,
+   "login": "anna-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000191,
+   "login": "bo-quist",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000192,
+   "login": "ada-singh",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000193,
+   "login": "chen-xu",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000194,
+   "login": "vik-novak",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000195,
+   "login": "ben-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000196,
+   "login": "elena-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000197,
+   "login": "amir-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000198,
+   "login": "alan-hall",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000199,
+   "login": "omar-xu",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000200,
+   "login": "farah-berg",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000201,
+   "login": "amir-meyer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000202,
+   "login": "jade-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000203,
+   "login": "nina-young",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000204,
+   "login": "pia-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000205,
+   "login": "kai-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000206,
+   "login": "amir-evans",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000207,
+   "login": "sofia-berg",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000208,
+   "login": "maya-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000209,
+   "login": "uma-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000210,
+   "login": "bo-berg",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000211,
+   "login": "grace-jansen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000212,
+   "login": "elena-xu",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000213,
+   "login": "omar-park",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000214,
+   "login": "quinn-larsen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000215,
+   "login": "mo-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000216,
+   "login": "yusuf-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000217,
+   "login": "omar-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000218,
+   "login": "kai-zimmer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000219,
+   "login": "sam-bakker",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000220,
+   "login": "grace-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000221,
+   "login": "nina-evans",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000222,
+   "login": "zoe-jansen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000223,
+   "login": "kai-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000224,
+   "login": "jon-wong",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000225,
+   "login": "dev-berg",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000226,
+   "login": "uma-jansen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000227,
+   "login": "zoe-berg",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000228,
+   "login": "carla-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000229,
+   "login": "jon-quist",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000230,
+   "login": "liam-fischer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000231,
+   "login": "grace-singh",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000232,
+   "login": "grace-zimmer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000233,
+   "login": "vik-rossi",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000234,
+   "login": "mo-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000235,
+   "login": "jade-bakker",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000236,
+   "login": "rosa-park",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000237,
+   "login": "nina-zimmer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000238,
+   "login": "elena-ueda",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000239,
+   "login": "raj-hall",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000240,
+   "login": "bo-dijk",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000241,
+   "login": "elena-park",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000242,
+   "login": "chen-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000243,
+   "login": "anna-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000244,
+   "login": "ivan-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000245,
+   "login": "tariq-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000246,
+   "login": "raj-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000247,
+   "login": "tess-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000248,
+   "login": "finn-jansen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000249,
+   "login": "sofia-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000250,
+   "login": "hana-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000251,
+   "login": "alan-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000252,
+   "login": "tess-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000253,
+   "login": "ben-jansen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000254,
+   "login": "alan-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000255,
+   "login": "carla-khan",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000256,
+   "login": "tariq-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000257,
+   "login": "emil-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000258,
+   "login": "finn-quist",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000259,
+   "login": "alan-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000260,
+   "login": "finn-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000261,
+   "login": "dana-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000262,
+   "login": "vik-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000263,
+   "login": "nina-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000264,
+   "login": "dev-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000265,
+   "login": "ivan-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000266,
+   "login": "mo-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000267,
+   "login": "jon-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000268,
+   "login": "lea-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000269,
+   "login": "sam-okafor",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000270,
+   "login": "ivan-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000271,
+   "login": "emil-meyer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000272,
+   "login": "yusuf-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000273,
+   "login": "ivan-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000274,
+   "login": "dana-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000275,
+   "login": "kai-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000276,
+   "login": "dana-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000277,
+   "login": "grace-ito",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000278,
+   "login": "zoe-quist",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000279,
+   "login": "vik-garcia",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000280,
+   "login": "kai-ito",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000281,
+   "login": "dana-visser",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000282,
+   "login": "ada-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000283,
+   "login": "alan-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000284,
+   "login": "raj-costa",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000285,
+   "login": "lea-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000286,
+   "login": "raj-jansen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000287,
+   "login": "chen-khan",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000288,
+   "login": "tess-quist",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000289,
+   "login": "sofia-khan",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000290,
+   "login": "rosa-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000291,
+   "login": "anna-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000292,
+   "login": "lea-larsen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000293,
+   "login": "mo-meyer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000294,
+   "login": "lea-bakker",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000295,
+   "login": "alan-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000296,
+   "login": "finn-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000297,
+   "login": "zoe-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000298,
+   "login": "finn-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000299,
+   "login": "carla-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000300,
+   "login": "liam-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000301,
+   "login": "maya-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000302,
+   "login": "rosa-novak",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000303,
+   "login": "dana-xu",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000304,
+   "login": "liam-jansen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000305,
+   "login": "pia-young",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000306,
+   "login": "yara-berg",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000307,
+   "login": "finn-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000308,
+   "login": "yusuf-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000309,
+   "login": "bo-ueda",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000310,
+   "login": "omar-jansen",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000311,
+   "login": "jon-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000312,
+   "login": "elena-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000313,
+   "login": "pia-zimmer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000314,
+   "login": "ben-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000315,
+   "login": "finn-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000316,
+   "login": "yusuf-hall",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000317,
+   "login": "amir-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000318,
+   "login": "hana-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000319,
+   "login": "pia-meyer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000320,
+   "login": "chen-fischer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000321,
+   "login": "zoe-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000322,
+   "login": "omar-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000323,
+   "login": "vik-costa",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000324,
+   "login": "chen-quist",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000325,
+   "login": "zoe-costa",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000326,
+   "login": "farah-zimmer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000327,
+   "login": "elena-singh",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000328,
+   "login": "grace-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000329,
+   "login": "kai-park",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000330,
+   "login": "anna-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000331,
+   "login": "zoe-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000332,
+   "login": "alan-park",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000333,
+   "login": "anna-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000334,
+   "login": "nina-fischer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000335,
+   "login": "jade-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000336,
+   "login": "wen-evans",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000337,
+   "login": "farah-quist",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000338,
+   "login": "tess-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000339,
+   "login": "bo-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000340,
+   "login": "hana-evans",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000341,
+   "login": "rosa-evans",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000342,
+   "login": "raj-rossi",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000343,
+   "login": "anna-garcia",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000344,
+   "login": "dana-tanaka",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000345,
+   "login": "grace-tanaka",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000346,
+   "login": "sam-quist",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000347,
+   "login": "kai-ueda",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000348,
+   "login": "lea-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000349,
+   "login": "elena-bakker",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000350,
+   "login": "chen-bakker",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000351,
+   "login": "sofia-young",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000352,
+   "login": "uma-singh",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000353,
+   "login": "sofia-ueda",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000354,
+   "login": "mo-rossi",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000355,
+   "login": "carla-zimmer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000356,
+   "login": "ivan-zimmer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000357,
+   "login": "uma-dijk",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000358,
+   "login": "tess-meyer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000359,
+   "login": "alan-zimmer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000360,
+   "login": "pia-garcia",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000361,
+   "login": "hana-larsen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000362,
+   "login": "hana-meyer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000363,
+   "login": "raj-garcia",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000364,
+   "login": "emil-khan",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000365,
+   "login": "jade-ueda",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000366,
+   "login": "dev-jansen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000367,
+   "login": "maya-bakker",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000368,
+   "login": "farah-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000369,
+   "login": "pia-costa",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000370,
+   "login": "yara-okafor",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000371,
+   "login": "yara-young",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000372,
+   "login": "uma-fischer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000373,
+   "login": "amir-fischer",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000374,
+   "login": "bo-evans",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000375,
+   "login": "alan-larsen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000376,
+   "login": "alan-novak",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000377,
+   "login": "quinn-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000378,
+   "login": "yara-quist",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000379,
+   "login": "anna-young",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000380,
+   "login": "alan-singh",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000381,
+   "login": "quinn-jansen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000382,
+   "login": "amir-dijk",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000383,
+   "login": "nina-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000384,
+   "login": "chen-rossi",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000385,
+   "login": "sofia-wong",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000386,
+   "login": "wen-rossi",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000387,
+   "login": "sam-evans",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000388,
+   "login": "liam-young",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000389,
+   "login": "ada-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000390,
+   "login": "hana-tanaka",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000391,
+   "login": "jade-wong",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000392,
+   "login": "sam-dijk",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000393,
+   "login": "raj-zimmer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000394,
+   "login": "alan-okafor",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000395,
+   "login": "alan-rossi",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000396,
+   "login": "ada-zimmer",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000397,
+   "login": "liam-ito",
+   "org": "contoso-apps"
+  },
+  {
+   "id": 7000398,
+   "login": "uma-visser",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000399,
+   "login": "dev-dijk",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000400,
+   "login": "mo-wong",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000401,
+   "login": "yusuf-jansen",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000402,
+   "login": "yara-ueda",
+   "org": "contoso-data"
+  },
+  {
+   "id": 7000403,
+   "login": "amir-ito",
+   "org": "contoso-data"
+  }
+ ],
+ "teams": [
+  {
+   "id": 880001,
+   "slug": "platform",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000100
+    },
+    {
+     "user_id": 7000101
+    },
+    {
+     "user_id": 7000102
+    },
+    {
+     "user_id": 7000103
+    },
+    {
+     "user_id": 7000104
+    },
+    {
+     "user_id": 7000105
+    },
+    {
+     "user_id": 7000106
+    },
+    {
+     "user_id": 7000107
+    },
+    {
+     "user_id": 7000108
+    },
+    {
+     "user_id": 7000109
+    },
+    {
+     "user_id": 7000110
+    },
+    {
+     "user_id": 7000111
+    },
+    {
+     "user_id": 7000112
+    },
+    {
+     "user_id": 7000113
+    },
+    {
+     "user_id": 7000114
+    },
+    {
+     "user_id": 7000115
+    },
+    {
+     "user_id": 7000116
+    },
+    {
+     "user_id": 7000117
+    },
+    {
+     "user_id": 7000118
+    },
+    {
+     "user_id": 7000119
+    },
+    {
+     "user_id": 7000120
+    },
+    {
+     "user_id": 7000121
+    },
+    {
+     "user_id": 7000122
+    },
+    {
+     "user_id": 7000123
+    }
+   ]
+  },
+  {
+   "id": 880002,
+   "slug": "payments",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000124
+    },
+    {
+     "user_id": 7000125
+    },
+    {
+     "user_id": 7000126
+    },
+    {
+     "user_id": 7000127
+    },
+    {
+     "user_id": 7000128
+    },
+    {
+     "user_id": 7000129
+    },
+    {
+     "user_id": 7000130
+    },
+    {
+     "user_id": 7000131
+    },
+    {
+     "user_id": 7000132
+    },
+    {
+     "user_id": 7000133
+    },
+    {
+     "user_id": 7000134
+    },
+    {
+     "user_id": 7000135
+    },
+    {
+     "user_id": 7000136
+    },
+    {
+     "user_id": 7000137
+    },
+    {
+     "user_id": 7000138
+    },
+    {
+     "user_id": 7000139
+    },
+    {
+     "user_id": 7000140
+    },
+    {
+     "user_id": 7000141
+    }
+   ]
+  },
+  {
+   "id": 880003,
+   "slug": "mobile",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000142
+    },
+    {
+     "user_id": 7000143
+    },
+    {
+     "user_id": 7000144
+    },
+    {
+     "user_id": 7000145
+    },
+    {
+     "user_id": 7000146
+    },
+    {
+     "user_id": 7000147
+    },
+    {
+     "user_id": 7000148
+    },
+    {
+     "user_id": 7000149
+    },
+    {
+     "user_id": 7000150
+    },
+    {
+     "user_id": 7000151
+    },
+    {
+     "user_id": 7000152
+    },
+    {
+     "user_id": 7000153
+    }
+   ]
+  },
+  {
+   "id": 880004,
+   "slug": "web-frontend",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000154
+    },
+    {
+     "user_id": 7000155
+    },
+    {
+     "user_id": 7000156
+    },
+    {
+     "user_id": 7000157
+    },
+    {
+     "user_id": 7000158
+    },
+    {
+     "user_id": 7000159
+    },
+    {
+     "user_id": 7000160
+    },
+    {
+     "user_id": 7000161
+    },
+    {
+     "user_id": 7000162
+    },
+    {
+     "user_id": 7000163
+    },
+    {
+     "user_id": 7000164
+    },
+    {
+     "user_id": 7000165
+    },
+    {
+     "user_id": 7000166
+    },
+    {
+     "user_id": 7000167
+    },
+    {
+     "user_id": 7000168
+    },
+    {
+     "user_id": 7000169
+    },
+    {
+     "user_id": 7000170
+    },
+    {
+     "user_id": 7000171
+    },
+    {
+     "user_id": 7000172
+    },
+    {
+     "user_id": 7000173
+    },
+    {
+     "user_id": 7000174
+    },
+    {
+     "user_id": 7000175
+    }
+   ]
+  },
+  {
+   "id": 880005,
+   "slug": "api-gateway",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000176
+    },
+    {
+     "user_id": 7000177
+    },
+    {
+     "user_id": 7000178
+    },
+    {
+     "user_id": 7000179
+    },
+    {
+     "user_id": 7000180
+    },
+    {
+     "user_id": 7000181
+    },
+    {
+     "user_id": 7000182
+    },
+    {
+     "user_id": 7000183
+    },
+    {
+     "user_id": 7000184,
+     "to": "2026-08-31"
+    },
+    {
+     "user_id": 7000185,
+     "to": "2026-08-31"
+    },
+    {
+     "user_id": 7000100
+    },
+    {
+     "user_id": 7000101
+    }
+   ]
+  },
+  {
+   "id": 880006,
+   "slug": "data-eng",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000186
+    },
+    {
+     "user_id": 7000187
+    },
+    {
+     "user_id": 7000188
+    },
+    {
+     "user_id": 7000189
+    },
+    {
+     "user_id": 7000190
+    },
+    {
+     "user_id": 7000191
+    },
+    {
+     "user_id": 7000192
+    },
+    {
+     "user_id": 7000193
+    },
+    {
+     "user_id": 7000194
+    },
+    {
+     "user_id": 7000195
+    },
+    {
+     "user_id": 7000196
+    },
+    {
+     "user_id": 7000197
+    },
+    {
+     "user_id": 7000198
+    },
+    {
+     "user_id": 7000199
+    },
+    {
+     "user_id": 7000200
+    },
+    {
+     "user_id": 7000201
+    },
+    {
+     "user_id": 7000202,
+     "from": "2026-08-01"
+    },
+    {
+     "user_id": 7000203,
+     "from": "2026-08-01"
+    },
+    {
+     "user_id": 7000204,
+     "from": "2026-08-01"
+    }
+   ]
+  },
+  {
+   "id": 880007,
+   "slug": "security",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000205
+    },
+    {
+     "user_id": 7000206
+    },
+    {
+     "user_id": 7000207
+    },
+    {
+     "user_id": 7000208
+    },
+    {
+     "user_id": 7000209
+    },
+    {
+     "user_id": 7000210
+    },
+    {
+     "user_id": 7000211
+    },
+    {
+     "user_id": 7000212
+    }
+   ]
+  },
+  {
+   "id": 880008,
+   "slug": "ml-ops",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000213
+    },
+    {
+     "user_id": 7000214
+    },
+    {
+     "user_id": 7000215
+    },
+    {
+     "user_id": 7000216
+    },
+    {
+     "user_id": 7000217
+    },
+    {
+     "user_id": 7000218
+    },
+    {
+     "user_id": 7000219
+    },
+    {
+     "user_id": 7000220
+    },
+    {
+     "user_id": 7000221
+    }
+   ]
+  },
+  {
+   "id": 880009,
+   "slug": "devex",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000222
+    },
+    {
+     "user_id": 7000223
+    },
+    {
+     "user_id": 7000224
+    },
+    {
+     "user_id": 7000225
+    },
+    {
+     "user_id": 7000226
+    },
+    {
+     "user_id": 7000227
+    },
+    {
+     "user_id": 7000213
+    },
+    {
+     "user_id": 7000214
+    }
+   ]
+  },
+  {
+   "id": 880010,
+   "slug": "qa-automation",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000228
+    },
+    {
+     "user_id": 7000229
+    },
+    {
+     "user_id": 7000230
+    },
+    {
+     "user_id": 7000231
+    },
+    {
+     "user_id": 7000232
+    },
+    {
+     "user_id": 7000233
+    },
+    {
+     "user_id": 7000234
+    },
+    {
+     "user_id": 7000235
+    },
+    {
+     "user_id": 7000236
+    },
+    {
+     "user_id": 7000237
+    },
+    {
+     "user_id": 7000238
+    },
+    {
+     "user_id": 7000239
+    },
+    {
+     "user_id": 7000240
+    },
+    {
+     "user_id": 7000241
+    },
+    {
+     "user_id": 7000186
+    }
+   ]
+  },
+  {
+   "id": 880011,
+   "slug": "design",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000242
+    },
+    {
+     "user_id": 7000243
+    },
+    {
+     "user_id": 7000244
+    }
+   ]
+  },
+  {
+   "id": 880012,
+   "slug": "platform-services",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000245
+    },
+    {
+     "user_id": 7000246
+    },
+    {
+     "user_id": 7000247
+    },
+    {
+     "user_id": 7000248
+    },
+    {
+     "user_id": 7000249
+    },
+    {
+     "user_id": 7000250
+    },
+    {
+     "user_id": 7000251
+    },
+    {
+     "user_id": 7000252
+    },
+    {
+     "user_id": 7000253
+    },
+    {
+     "user_id": 7000254
+    },
+    {
+     "user_id": 7000255
+    },
+    {
+     "user_id": 7000256
+    },
+    {
+     "user_id": 7000257
+    },
+    {
+     "user_id": 7000258
+    },
+    {
+     "user_id": 7000259
+    },
+    {
+     "user_id": 7000260
+    },
+    {
+     "user_id": 7000261
+    },
+    {
+     "user_id": 7000262
+    },
+    {
+     "user_id": 7000263
+    },
+    {
+     "user_id": 7000264
+    },
+    {
+     "user_id": 7000265
+    },
+    {
+     "user_id": 7000266
+    },
+    {
+     "user_id": 7000267
+    },
+    {
+     "user_id": 7000268
+    }
+   ]
+  },
+  {
+   "id": 880013,
+   "slug": "payments-risk",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000269
+    },
+    {
+     "user_id": 7000270
+    },
+    {
+     "user_id": 7000271
+    },
+    {
+     "user_id": 7000272
+    },
+    {
+     "user_id": 7000273
+    },
+    {
+     "user_id": 7000274
+    },
+    {
+     "user_id": 7000275
+    },
+    {
+     "user_id": 7000276
+    },
+    {
+     "user_id": 7000277
+    },
+    {
+     "user_id": 7000278
+    },
+    {
+     "user_id": 7000279
+    },
+    {
+     "user_id": 7000280
+    },
+    {
+     "user_id": 7000281
+    },
+    {
+     "user_id": 7000282
+    },
+    {
+     "user_id": 7000283
+    },
+    {
+     "user_id": 7000284
+    },
+    {
+     "user_id": 7000285
+    },
+    {
+     "user_id": 7000286
+    }
+   ]
+  },
+  {
+   "id": 880014,
+   "slug": "mobile-platform",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000287
+    },
+    {
+     "user_id": 7000288
+    },
+    {
+     "user_id": 7000289
+    },
+    {
+     "user_id": 7000290
+    },
+    {
+     "user_id": 7000291
+    },
+    {
+     "user_id": 7000292
+    },
+    {
+     "user_id": 7000293
+    },
+    {
+     "user_id": 7000294
+    },
+    {
+     "user_id": 7000295
+    },
+    {
+     "user_id": 7000296
+    },
+    {
+     "user_id": 7000297
+    },
+    {
+     "user_id": 7000298
+    }
+   ]
+  },
+  {
+   "id": 880015,
+   "slug": "web-experience",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000299
+    },
+    {
+     "user_id": 7000300
+    },
+    {
+     "user_id": 7000301
+    },
+    {
+     "user_id": 7000302
+    },
+    {
+     "user_id": 7000303
+    },
+    {
+     "user_id": 7000304
+    },
+    {
+     "user_id": 7000305
+    },
+    {
+     "user_id": 7000306
+    },
+    {
+     "user_id": 7000307
+    },
+    {
+     "user_id": 7000308
+    },
+    {
+     "user_id": 7000309
+    },
+    {
+     "user_id": 7000310
+    },
+    {
+     "user_id": 7000311
+    },
+    {
+     "user_id": 7000312
+    },
+    {
+     "user_id": 7000313
+    },
+    {
+     "user_id": 7000314
+    },
+    {
+     "user_id": 7000315
+    },
+    {
+     "user_id": 7000316
+    },
+    {
+     "user_id": 7000317
+    },
+    {
+     "user_id": 7000318
+    },
+    {
+     "user_id": 7000319
+    },
+    {
+     "user_id": 7000320
+    }
+   ]
+  },
+  {
+   "id": 880016,
+   "slug": "api-reliability",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000321
+    },
+    {
+     "user_id": 7000322
+    },
+    {
+     "user_id": 7000323
+    },
+    {
+     "user_id": 7000324
+    },
+    {
+     "user_id": 7000325
+    },
+    {
+     "user_id": 7000326
+    },
+    {
+     "user_id": 7000327
+    },
+    {
+     "user_id": 7000328
+    },
+    {
+     "user_id": 7000329,
+     "to": "2026-08-31"
+    },
+    {
+     "user_id": 7000330,
+     "to": "2026-08-31"
+    },
+    {
+     "user_id": 7000245
+    },
+    {
+     "user_id": 7000246
+    }
+   ]
+  },
+  {
+   "id": 880017,
+   "slug": "data-platform",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000331
+    },
+    {
+     "user_id": 7000332
+    },
+    {
+     "user_id": 7000333
+    },
+    {
+     "user_id": 7000334
+    },
+    {
+     "user_id": 7000335
+    },
+    {
+     "user_id": 7000336
+    },
+    {
+     "user_id": 7000337
+    },
+    {
+     "user_id": 7000338
+    },
+    {
+     "user_id": 7000339
+    },
+    {
+     "user_id": 7000340
+    },
+    {
+     "user_id": 7000341
+    },
+    {
+     "user_id": 7000342
+    },
+    {
+     "user_id": 7000343
+    },
+    {
+     "user_id": 7000344
+    },
+    {
+     "user_id": 7000345
+    },
+    {
+     "user_id": 7000346
+    },
+    {
+     "user_id": 7000347,
+     "from": "2026-08-01"
+    },
+    {
+     "user_id": 7000348,
+     "from": "2026-08-01"
+    },
+    {
+     "user_id": 7000349,
+     "from": "2026-08-01"
+    }
+   ]
+  },
+  {
+   "id": 880018,
+   "slug": "product-security",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000350
+    },
+    {
+     "user_id": 7000351
+    },
+    {
+     "user_id": 7000352
+    },
+    {
+     "user_id": 7000353
+    },
+    {
+     "user_id": 7000354
+    },
+    {
+     "user_id": 7000355
+    },
+    {
+     "user_id": 7000356
+    },
+    {
+     "user_id": 7000357
+    }
+   ]
+  },
+  {
+   "id": 880019,
+   "slug": "ml-platform",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000358
+    },
+    {
+     "user_id": 7000359
+    },
+    {
+     "user_id": 7000360
+    },
+    {
+     "user_id": 7000361
+    },
+    {
+     "user_id": 7000362
+    },
+    {
+     "user_id": 7000363
+    },
+    {
+     "user_id": 7000364
+    },
+    {
+     "user_id": 7000365
+    },
+    {
+     "user_id": 7000366
+    }
+   ]
+  },
+  {
+   "id": 880020,
+   "slug": "developer-productivity",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000367
+    },
+    {
+     "user_id": 7000368
+    },
+    {
+     "user_id": 7000369
+    },
+    {
+     "user_id": 7000370
+    },
+    {
+     "user_id": 7000371
+    },
+    {
+     "user_id": 7000372
+    },
+    {
+     "user_id": 7000358
+    },
+    {
+     "user_id": 7000359
+    }
+   ]
+  },
+  {
+   "id": 880021,
+   "slug": "quality-engineering",
+   "org": "contoso-data",
+   "members": [
+    {
+     "user_id": 7000373
+    },
+    {
+     "user_id": 7000374
+    },
+    {
+     "user_id": 7000375
+    },
+    {
+     "user_id": 7000376
+    },
+    {
+     "user_id": 7000377
+    },
+    {
+     "user_id": 7000378
+    },
+    {
+     "user_id": 7000379
+    },
+    {
+     "user_id": 7000380
+    },
+    {
+     "user_id": 7000381
+    },
+    {
+     "user_id": 7000382
+    },
+    {
+     "user_id": 7000383
+    },
+    {
+     "user_id": 7000384
+    },
+    {
+     "user_id": 7000385
+    },
+    {
+     "user_id": 7000386
+    },
+    {
+     "user_id": 7000331
+    }
+   ]
+  },
+  {
+   "id": 880022,
+   "slug": "ux-research",
+   "org": "contoso-apps",
+   "members": [
+    {
+     "user_id": 7000387
+    },
+    {
+     "user_id": 7000388
+    },
+    {
+     "user_id": 7000389
+    }
+   ]
+  }
+ ]
+}

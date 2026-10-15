@@ -1,0 +1,92 @@
+# Turns the historic data in data/ into the static dashboard and publishes it on GitHub Pages.
+#
+# One-time setup: Settings › Pages › Build and deployment › Source = "GitHub Actions".
+# Secret PSEUDONYM_SALT is required when privacy.pseudonymize is enabled (default).
+#
+# Run manually with source = demo-orgs / demo-enterprise to publish the bundled Contoso test data
+# (no Copilot credentials needed) – handy to try the dashboard before connecting your own data.
+name: Build dashboard
+
+on:
+  workflow_run:
+    workflows: [Collect Copilot usage]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - config/**
+      - src/**
+      - shared/**
+      - scripts/build/**
+      - index.html
+      - vite.config.ts
+      - package.json
+      - package-lock.json
+      - .github/workflows/build-dashboard.yml
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Data to publish
+        type: choice
+        options: [data, demo-orgs, demo-enterprise]
+        default: data
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # After a collect run: only when it succeeded (a failed auth check must not publish an empty dashboard).
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # workflow_run: build the default branch including the data commit pushed by the collector
+          ref: ${{ github.event_name == 'workflow_run' && github.event.repository.default_branch || '' }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build dashboard from data/
+        if: inputs.source == '' || inputs.source == 'data'
+        env:
+          PSEUDONYM_SALT: ${{ secrets.PSEUDONYM_SALT }}
+        run: |
+          npm run build
+          echo "SITE_DIR=dist" >> "$GITHUB_ENV"
+
+      - name: Build demo dashboard from test data
+        if: startsWith(inputs.source, 'demo-')
+        env:
+          SCOPE: ${{ inputs.source == 'demo-enterprise' && 'enterprise' || 'orgs' }}
+        run: |
+          npm run testdata -- --scope "$SCOPE"
+          echo "SITE_DIR=testdata/out/$SCOPE/dist" >> "$GITHUB_ENV"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.SITE_DIR }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

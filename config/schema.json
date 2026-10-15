@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Copilot Maturity Dashboard configuration",
+  "type": "object",
+  "required": ["scope"],
+  "properties": {
+    "scope": { "enum": ["enterprise", "organization"] },
+    "enterprise": { "type": "string" },
+    "organizations": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "branding": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "logo": { "type": "string" },
+        "footer": { "type": "string" }
+      }
+    },
+    "api": {
+      "type": "object",
+      "properties": { "url": { "type": "string" }, "version": { "type": "string" } }
+    },
+    "collect": {
+      "type": "object",
+      "properties": {
+        "start_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "backfill_days": { "type": "integer", "minimum": 1, "maximum": 366 },
+        "pending_retry_limit": { "type": "integer", "minimum": 1 },
+        "billing": { "type": "boolean" },
+        "keep_raw": { "type": "boolean" },
+        "raw_retention_months": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "usd_per_credit": { "type": "number", "exclusiveMinimum": 0 },
+        "estimate_usd_per_million_tokens": {
+          "type": "object",
+          "properties": {
+            "frontier": { "type": "number" },
+            "standard": { "type": "number" },
+            "lightweight": { "type": "number" },
+            "unclassified": { "type": "number" }
+          }
+        }
+      }
+    },
+    "model_tiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tier", "patterns"],
+        "properties": {
+          "tier": { "enum": ["frontier", "standard", "lightweight"] },
+          "patterns": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "model_mix_target": {
+      "type": "object",
+      "properties": {
+        "frontier": { "type": "number", "minimum": 0 },
+        "standard": { "type": "number", "minimum": 0 },
+        "lightweight": { "type": "number", "minimum": 0 }
+      }
+    },
+    "metric_targets": { "$ref": "#/definitions/metricNumbers" },
+    "weights": { "$ref": "#/definitions/metricNumbers" },
+    "maturity_levels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "name"],
+        "properties": {
+          "level": { "type": "integer" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "min": { "$ref": "#/definitions/metricNumbers" }
+        }
+      }
+    },
+    "working_days": {
+      "type": "object",
+      "properties": {
+        "weekdays": { "type": "array", "items": { "type": "integer", "minimum": 0, "maximum": 6 } },
+        "holidays": { "type": "array", "items": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" } }
+      }
+    },
+    "team_names": { "type": "object", "additionalProperties": { "type": "string" } },
+    "privacy": { "type": "object", "properties": { "pseudonymize": { "type": "boolean" } } }
+  },
+  "definitions": {
+    "metricNumbers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tokens_per_dollar": { "type": "number", "minimum": 0 },
+        "model_mix_health": { "type": "number", "minimum": 0 },
+        "active_day_ratio": { "type": "number", "minimum": 0 },
+        "tokens_per_dev": { "type": "number", "minimum": 0 }
+      }
+    }
+  }
+}

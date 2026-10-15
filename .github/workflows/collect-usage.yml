@@ -1,0 +1,92 @@
+# Collects GitHub Copilot usage metrics every day and commits them to data/ (the historic archive).
+#
+# The REST API only offers rolling 28-day reports, so this workflow downloads one 1-day report per calendar day
+# and keeps a ledger (data/<kind>/<slug>/ledger.json). Days that are not published yet are retried on later runs,
+# which gives complete calendar months as long as the workflow runs at least once every ~4 weeks.
+#
+# Required secrets (pick ONE auth option, see README › Authentication):
+#   GitHub App:  COPILOT_APP_ID + COPILOT_APP_PRIVATE_KEY  (optional COPILOT_APP_INSTALLATION_ID)
+#   PAT:         COPILOT_METRICS_TOKEN                     (optional COPILOT_METRICS_TOKEN_<ORG> per org)
+#   Optional:    COPILOT_BILLING_TOKEN                     (per-model AI credit usage)
+name: Collect Copilot usage
+
+on:
+  schedule:
+    - cron: '23 5 * * *' # daily, 05:23 UTC (reports for day D are usually published within ~2 days)
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'First day to (re)collect, YYYY-MM-DD (empty = automatic back-fill)'
+        required: false
+        default: ''
+      until:
+        description: 'Last day to collect, YYYY-MM-DD (empty = latest available)'
+        required: false
+        default: ''
+      force:
+        description: 'Re-download days that were already collected'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # commit the collected data; the Copilot API itself is called with the App/PAT below
+
+concurrency:
+  group: copilot-usage-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      COPILOT_APP_ID: ${{ secrets.COPILOT_APP_ID }}
+      COPILOT_APP_PRIVATE_KEY: ${{ secrets.COPILOT_APP_PRIVATE_KEY }}
+      COPILOT_APP_INSTALLATION_ID: ${{ secrets.COPILOT_APP_INSTALLATION_ID }}
+      COPILOT_METRICS_TOKEN: ${{ secrets.COPILOT_METRICS_TOKEN }}
+      COPILOT_BILLING_TOKEN: ${{ secrets.COPILOT_BILLING_TOKEN }}
+      # PAT mode with one token per organization: add one line per org (name = org slug, upper-case, - → _), e.g.
+      # COPILOT_METRICS_TOKEN_MY_ORG: ${{ secrets.COPILOT_METRICS_TOKEN_MY_ORG }}
+      # GHE.com data residency: set the repository variable COPILOT_API_URL (e.g. https://api.SUBDOMAIN.ghe.com)
+      COPILOT_API_URL: ${{ vars.COPILOT_API_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check credentials and permissions
+        run: npm run auth:check
+
+      - name: Collect usage reports
+        env:
+          INPUT_SINCE: ${{ inputs.since }}
+          INPUT_UNTIL: ${{ inputs.until }}
+          INPUT_FORCE: ${{ inputs.force }}
+        run: |
+          args=()
+          [ -n "$INPUT_SINCE" ] && args+=(--since "$INPUT_SINCE")
+          [ -n "$INPUT_UNTIL" ] && args+=(--until "$INPUT_UNTIL")
+          [ "$INPUT_FORCE" = "true" ] && args+=(--force)
+          npm run collect -- "${args[@]}"
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No new data."
+            exit 0
+          fi
+          git commit -m "data: Copilot usage $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "Push rejected, rebasing (attempt $attempt)…"
+            git pull --rebase
+          done
+          exit 1

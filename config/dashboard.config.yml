@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=./schema.json
+#
+# Copilot Maturity Dashboard – configuration
+# Run `npm run configure` for an interactive wizard, or edit this file directly.
+# Every key except scope + enterprise/organizations is optional; omitted keys use built-in defaults.
+
+# ── Scope ────────────────────────────────────────────────────────────────────
+# enterprise   → data from /enterprises/{enterprise}/copilot/metrics/reports/*
+# organization → data from /orgs/{org}/copilot/metrics/reports/* (one dashboard per org, switcher in the UI)
+scope: organization
+# enterprise: my-enterprise
+organizations:
+  - your-org
+
+# ── Branding (white label) ──────────────────────────────────────────────────
+branding:
+  title: Copilot Maturity Dashboard
+  subtitle: Token consumption insights per team
+  logo: ""          # optional: path in this repo (e.g. config/logo.svg) or https URL; GitHub mark when empty
+  footer: ""
+
+# ── Data collection ─────────────────────────────────────────────────────────
+collect:
+  backfill_days: 120          # first run fetches this many days back (API keeps max 1 year, from 2025-10-10)
+  # start_date: 2026-01-01    # alternatively a fixed first day
+  pending_retry_limit: 5      # days not yet available are retried; after N attempts (and >7 days old) marked missing
+  billing: true               # also fetch per-user/per-model AI credit usage (needs billing permission, see README)
+  keep_raw: true              # store full raw NDJSON (gzipped) next to the trimmed daily JSON
+  raw_retention_months: 0     # prune raw gz files older than N months (0 = keep)
+
+# ── Pricing ─────────────────────────────────────────────────────────────────
+pricing:
+  usd_per_credit: 0.01
+  # Blended USD per 1M tokens per tier; only used to ESTIMATE tokens when the API does not report them.
+  estimate_usd_per_million_tokens:
+    frontier: 6
+    standard: 2
+    lightweight: 0.4
+    unclassified: 2
+
+# ── Model tiers (first matching rule wins, case-insensitive regex) ──────────
+model_tiers:
+  - tier: lightweight
+    # \b = word boundary, so "mini" matches gpt-5-mini but not gemini
+    patterns: [haiku, '\bmini\b', '\bnano\b', flash, '\blite\b', grok-code-fast]
+  - tier: frontier
+    patterns: [opus, "^o[1-9](-pro)?$", "^gpt-5(\\.\\d+)?(-pro)?$", "gemini-[\\d.]+-pro", "gpt-4\\.5"]
+  - tier: standard
+    patterns: [sonnet, codex, "gpt-4\\.1", gpt-4o, gpt-5, gemini, claude, grok]
+
+# Healthy model mix (shares, normalised automatically)
+model_mix_target:
+  frontier: 0.2
+  standard: 0.6
+  lightweight: 0.2
+
+# ── Scoring ─────────────────────────────────────────────────────────────────
+# Absolute targets: a metric at its target scores 100.
+metric_targets:
+  tokens_per_dollar: 500000     # log scale
+  model_mix_health: 100
+  active_day_ratio: 0.8
+  tokens_per_dev: 60000000      # log scale, tokens per active developer per month
+
+# Default weights (viewers can change them in the dashboard)
+weights:
+  tokens_per_dollar: 25
+  model_mix_health: 25
+  active_day_ratio: 25
+  tokens_per_dev: 25
+
+# Fixed maturity levels: a team/person reaches a level when ALL minimums of that level (and lower levels) are met.
+maturity_levels:
+  - level: 1
+    name: Exploring
+    description: Has seats, occasional or experimental use.
+    min: {}
+  - level: 2
+    name: Practicing
+    description: Regular use in daily work.
+    min: { active_day_ratio: 0.3, tokens_per_dev: 5000000 }
+  - level: 3
+    name: Agentic
+    description: Frequent, deep (agent) usage with a sensible model mix.
+    min: { active_day_ratio: 0.55, tokens_per_dev: 25000000, model_mix_health: 60 }
+  - level: 4
+    name: Autonomous
+    description: Copilot is part of every working day, at scale and cost-efficient.
+    min: { active_day_ratio: 0.75, tokens_per_dev: 60000000, model_mix_health: 75, tokens_per_dollar: 400000 }
+
+working_days:
+  weekdays: [1, 2, 3, 4, 5]     # 0=Sun … 6=Sat
+  holidays: []                  # e.g. ["2026-12-25"]
+
+# Optional display names for team slugs
+team_names: {}
+#  platform: Platform Engineering
+
+privacy:
+  pseudonymize: true            # replace logins with stable HMAC aliases in the published site (needs PSEUDONYM_SALT secret)

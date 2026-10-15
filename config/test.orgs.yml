@@ -1,0 +1,30 @@
+# Test configuration – organization scope (2 orgs → org switcher) against the mock API and the Contoso fixtures.
+# Used by: npm run testdata -- --scope orgs
+scope: organization
+organizations:
+  - contoso-apps
+  - contoso-data
+branding:
+  title: Contoso Copilot Maturity (test data)
+  subtitle: Organization scope · generated fixtures
+collect:
+  start_date: "2026-07-01"
+team_names:
+  data-eng: Data Engineering
+  ml-ops: ML Ops
+  qa-automation: QA Automation
+  devex: Developer Experience
+  api-gateway: API Gateway
+  platform-services: Platform Services
+  payments-risk: Payments Risk
+  mobile-platform: Mobile Platform
+  web-experience: Web Experience
+  api-reliability: API Reliability
+  data-platform: Data Platform
+  product-security: Product Security
+  ml-platform: ML Platform
+  developer-productivity: Developer Productivity
+  quality-engineering: Quality Engineering
+privacy:
+  # Exercised with a fixed test salt by the test pipeline.
+  pseudonymize: true

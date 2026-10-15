@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/data/
+testdata/out/
+coverage/
+*.log
+.env
+.env.*
+probe-output*.json
+*.pem
